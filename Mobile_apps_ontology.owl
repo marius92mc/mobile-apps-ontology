@@ -16,10 +16,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="#Advertising"/>
     </Declaration>
@@ -418,7 +419,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Producer"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI=":Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Productivity"/>
@@ -985,7 +986,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#appID"/>
         <NamedIndividual IRI="#Foursquare"/>
-        <Literal datatypeIRI="&xsd;string">6</Literal>
+        <Literal datatypeIRI="&xsd;integer">6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
@@ -1215,28 +1216,28 @@
     <DataPropertyDomain>
         <DataProperty IRI="#appID"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
             <Class IRI="#App"/>
         </ObjectSomeValuesFrom>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#name"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
             <Class IRI="#App"/>
         </ObjectSomeValuesFrom>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#producer_name"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
             <Class IRI="#Producer"/>
         </ObjectSomeValuesFrom>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#version"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
             <Class IRI="#Platform"/>
         </ObjectSomeValuesFrom>
     </DataPropertyDomain>
