@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#Accelerometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Advertising"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Android"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Books"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Business"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Calculators"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Camera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commerce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cycling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceAccess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enterprise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entertainment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Finance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fitness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FitnessCoach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FitnessMonitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodAndDrink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GPS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Games"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hybrid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lifestyle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Messaging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoneyManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultiPlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Native"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Navigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhotoAndVideo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Productivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Running"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SinglePlayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialNetworking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StayOnTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tech"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TravelAndTransport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wearables"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Web"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindowsPhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Workout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iOS"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Accelerometer"/>
+        <Class IRI="#DeviceAccess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Advertising"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Android"/>
+        <Class IRI="#Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Books"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Business"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Calculators"/>
+        <Class IRI="#Business"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camera"/>
+        <Class IRI="#DeviceAccess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardio"/>
+        <Class IRI="#FitnessMonitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commerce"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cycling"/>
+        <Class IRI="#FitnessMonitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Education"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enterprise"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entertainment"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Finance"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fitness"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FitnessCoach"/>
+        <Class IRI="#Fitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FitnessMonitor"/>
+        <Class IRI="#Fitness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodAndDrink"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GPS"/>
+        <Class IRI="#DeviceAccess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Games"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hybrid"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lifestyle"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Messaging"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoneyManagement"/>
+        <Class IRI="#Business"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultiPlayer"/>
+        <Class IRI="#Games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Native"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Navigation"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhotoAndVideo"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Productivity"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Running"/>
+        <Class IRI="#FitnessMonitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SinglePlayer"/>
+        <Class IRI="#Games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialNetworking"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StayOnTask"/>
+        <Class IRI="#Business"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tech"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TravelAndTransport"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Utilities"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wearables"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weather"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Web"/>
+        <Class IRI="#Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindowsPhone"/>
+        <Class IRI="#Platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Workout"/>
+        <Class IRI="#FitnessMonitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iOS"/>
+        <Class IRI="#Platform"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
