@@ -30,6 +30,9 @@
         <Class IRI="#Android"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#App"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Books"/>
     </Declaration>
     <Declaration>
@@ -123,6 +126,9 @@
         <Class IRI="#Platform"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Producer"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Productivity"/>
     </Declaration>
     <Declaration>
@@ -169,6 +175,33 @@
     </Declaration>
     <Declaration>
         <Class IRI="#iOS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#developedFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCategoryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProducedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#appID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#producer_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#version"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Accelerometer"/>
@@ -295,6 +328,10 @@
         <Class IRI="#Category"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Producer"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Productivity"/>
         <Class IRI="#Category"/>
     </SubClassOf>
@@ -354,6 +391,120 @@
         <Class IRI="#iOS"/>
         <Class IRI="#Platform"/>
     </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#developedFor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#developedFor"/>
+            <Class IRI="#App"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCategoryOf"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isCategoryOf"/>
+            <Class IRI="#App"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isProducedBy"/>
+            <Class IRI="#App"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isTypeOf"/>
+            <Class IRI="#App"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires"/>
+            <Class IRI="#App"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#developedFor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#developedFor"/>
+            <Class IRI="#Platform"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCategoryOf"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#isCategoryOf"/>
+            <Class IRI="#Category"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#isProducedBy"/>
+            <Class IRI="#Producer"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#isTypeOf"/>
+            <Class IRI="#Type"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#requires"/>
+            <Class IRI="#DeviceAccess"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#appID"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#App"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#App"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#producer_name"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Producer"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#version"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Platform"/>
+        </ObjectSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#appID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#producer_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#version"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
 </Ontology>
 
 
