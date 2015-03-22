@@ -968,6 +968,11 @@
         <Literal datatypeIRI="&xsd;integer">7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#AngryBirds"/>
+        <Literal datatypeIRI="&xsd;string">AngryBirds</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
         <NamedIndividual IRI="#AngryBirds"/>
         <Literal datatypeIRI="&xsd;string">Rovio Entertainment Ltd
@@ -977,6 +982,11 @@
         <DataProperty IRI="#appID"/>
         <NamedIndividual IRI="#Fancy"/>
         <Literal datatypeIRI="&xsd;integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Fancy"/>
+        <Literal datatypeIRI="&xsd;string">Fancy</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
@@ -989,6 +999,12 @@
         <Literal datatypeIRI="&xsd;integer">6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Foursquare"/>
+        <Literal datatypeIRI="&xsd;string">Foursquare
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
         <NamedIndividual IRI="#Foursquare"/>
         <Literal datatypeIRI="&xsd;string">Foursquare Labs, Inc</Literal>
@@ -997,6 +1013,11 @@
         <DataProperty IRI="#appID"/>
         <NamedIndividual IRI="#GoodTask"/>
         <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#GoodTask"/>
+        <Literal datatypeIRI="&xsd;string">GoodTask</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
@@ -1009,6 +1030,11 @@
         <Literal datatypeIRI="&xsd;integer">4</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#IMDB"/>
+        <Literal datatypeIRI="&xsd;string">IMDB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
         <NamedIndividual IRI="#IMDB"/>
         <Literal datatypeIRI="&xsd;string">imdb</Literal>
@@ -1017,6 +1043,11 @@
         <DataProperty IRI="#appID"/>
         <NamedIndividual IRI="#MathematicalFormulas"/>
         <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#MathematicalFormulas"/>
+        <Literal datatypeIRI="&xsd;string">MathematicalFormulas</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
@@ -1031,6 +1062,11 @@
 </Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Messenger"/>
+        <Literal datatypeIRI="&xsd;string">Messenger</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
         <NamedIndividual IRI="#Messenger"/>
         <Literal datatypeIRI="&xsd;string">Facebook</Literal>
@@ -1039,6 +1075,11 @@
         <DataProperty IRI="#appID"/>
         <NamedIndividual IRI="#NikeRunning"/>
         <Literal datatypeIRI="&xsd;integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#NikeRunning"/>
+        <Literal datatypeIRI="&xsd;string">NikeRunning</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
@@ -1051,6 +1092,11 @@
         <Literal datatypeIRI="&xsd;integer">5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#PayPal"/>
+        <Literal datatypeIRI="&xsd;string">PayPal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
         <NamedIndividual IRI="#PayPal"/>
         <Literal datatypeIRI="&xsd;string">PayPal</Literal>
@@ -1059,6 +1105,11 @@
         <DataProperty IRI="#appID"/>
         <NamedIndividual IRI="#PerformanceStretching"/>
         <Literal datatypeIRI="&xsd;integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#PerformanceStretching"/>
+        <Literal datatypeIRI="&xsd;string">PerformanceStretching</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
@@ -1071,6 +1122,11 @@
         <Literal datatypeIRI="&xsd;integer">15</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Pomelo"/>
+        <Literal datatypeIRI="&xsd;string">Pomelo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
         <NamedIndividual IRI="#Pomelo"/>
         <Literal datatypeIRI="&xsd;string">Xiamen Meitu Technology</Literal>
@@ -1079,6 +1135,11 @@
         <DataProperty IRI="#appID"/>
         <NamedIndividual IRI="#Runastic"/>
         <Literal datatypeIRI="&xsd;integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Runastic"/>
+        <Literal datatypeIRI="&xsd;string">Runastic</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
@@ -1093,8 +1154,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
         <NamedIndividual IRI="#Scribd"/>
-        <Literal datatypeIRI="&xsd;string">Scribd - Read Unlimited Books
-</Literal>
+        <Literal datatypeIRI="&xsd;string">Scribd</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
@@ -1108,6 +1168,11 @@
 </Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Shazam"/>
+        <Literal datatypeIRI="&xsd;string">Shazam</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
         <NamedIndividual IRI="#Shazam"/>
         <Literal datatypeIRI="&xsd;string">Shazam Entertainment Limited</Literal>
@@ -1116,6 +1181,12 @@
         <DataProperty IRI="#appID"/>
         <NamedIndividual IRI="#SwiftkeyKeyboard"/>
         <Literal datatypeIRI="&xsd;integer">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#SwiftkeyKeyboard"/>
+        <Literal datatypeIRI="&xsd;string">SwiftkeyKeyboard
+</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
@@ -1128,6 +1199,11 @@
         <Literal datatypeIRI="&xsd;integer">8</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#WorldOfTanks"/>
+        <Literal datatypeIRI="&xsd;string">WorldOfTanks</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
         <NamedIndividual IRI="#WorldOfTanks"/>
         <Literal datatypeIRI="&xsd;string">WARGAMING Public Company Limited </Literal>
@@ -1137,6 +1213,11 @@
         <NamedIndividual IRI="#YahooWeather"/>
         <Literal datatypeIRI="&xsd;integer">17
 </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#YahooWeather"/>
+        <Literal datatypeIRI="&xsd;string">YahooWeather</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#producer_name"/>
