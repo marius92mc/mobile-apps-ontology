@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1427049191274" name="http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl" uri="Mobile_apps_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1427136828321" name="http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl" uri="Mobile_apps_ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1427136828321" name="http://www.w3.org/2002/07/owl" uri="Mobile_apps_ontology_RDF.owl"/>
     </group>
 </catalog>

@@ -1,0 +1,1097 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Mobile_apps_ontology "http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:Mobile_apps_ontology="http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#">
+    <Ontology rdf:about="http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#developedFor -->
+
+    <ObjectProperty rdf:about="&Mobile_apps_ontology;developedFor">
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&Mobile_apps_ontology;developedFor"/>
+                <onClass rdf:resource="&Mobile_apps_ontology;Platform"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#isProducedBy -->
+
+    <ObjectProperty rdf:about="&Mobile_apps_ontology;isProducedBy">
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&Mobile_apps_ontology;isProducedBy"/>
+                <onClass rdf:resource="&Mobile_apps_ontology;Producer"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#isTypeOf -->
+
+    <ObjectProperty rdf:about="&Mobile_apps_ontology;isTypeOf">
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&Mobile_apps_ontology;isTypeOf"/>
+                <onClass rdf:resource="&Mobile_apps_ontology;Type"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#requires -->
+
+    <ObjectProperty rdf:about="&Mobile_apps_ontology;requires">
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&Mobile_apps_ontology;requires"/>
+                <onClass rdf:resource="&Mobile_apps_ontology;DeviceAccess"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#appID -->
+
+    <DatatypeProperty rdf:about="&Mobile_apps_ontology;appID">
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#name -->
+
+    <DatatypeProperty rdf:about="&Mobile_apps_ontology;name">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#producer_name -->
+
+    <DatatypeProperty rdf:about="&Mobile_apps_ontology;producer_name">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <someValuesFrom rdf:resource="&Mobile_apps_ontology;Producer"/>
+            </Restriction>
+        </rdfs:domain>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#version -->
+
+    <DatatypeProperty rdf:about="&Mobile_apps_ontology;version">
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <someValuesFrom rdf:resource="&Mobile_apps_ontology;Platform"/>
+            </Restriction>
+        </rdfs:domain>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Advertising -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Advertising">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Books -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Books">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Business -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Business">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Calculators -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Calculators">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Business"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Cardio -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Cardio">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;FitnessMonitor"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Category -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Commerce -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Commerce">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Cycling -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Cycling">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;FitnessMonitor"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#DeviceAccess -->
+
+    <Class rdf:about="&Mobile_apps_ontology;DeviceAccess"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Education -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Education">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Enterprise -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Enterprise">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Entertainment -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Entertainment">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Finance -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Finance">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Fitness -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Fitness">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#FitnessCoach -->
+
+    <Class rdf:about="&Mobile_apps_ontology;FitnessCoach">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Fitness"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#FitnessMonitor -->
+
+    <Class rdf:about="&Mobile_apps_ontology;FitnessMonitor">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Fitness"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#FoodAndDrink -->
+
+    <Class rdf:about="&Mobile_apps_ontology;FoodAndDrink">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Games -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Games">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Health -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Health">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Lifestyle -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Lifestyle">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Medical -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Medical">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Messaging -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Messaging">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#MoneyManagement -->
+
+    <Class rdf:about="&Mobile_apps_ontology;MoneyManagement">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Business"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#MultiPlayer -->
+
+    <Class rdf:about="&Mobile_apps_ontology;MultiPlayer">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Games"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Music -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Music">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Navigation -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Navigation">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#PhotoAndVideo -->
+
+    <Class rdf:about="&Mobile_apps_ontology;PhotoAndVideo">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Platform -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Platform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Producer -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Producer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Productivity -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Productivity">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Running -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Running">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;FitnessMonitor"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#SinglePlayer -->
+
+    <Class rdf:about="&Mobile_apps_ontology;SinglePlayer">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Games"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#SocialNetworking -->
+
+    <Class rdf:about="&Mobile_apps_ontology;SocialNetworking">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Sports -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Sports">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#StayOnTask -->
+
+    <Class rdf:about="&Mobile_apps_ontology;StayOnTask">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Business"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Tech -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Tech">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#TravelAndTransport -->
+
+    <Class rdf:about="&Mobile_apps_ontology;TravelAndTransport">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Type -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Utilities -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Utilities">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Wearables -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Wearables">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Weather -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Weather">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;Category"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Workout -->
+
+    <Class rdf:about="&Mobile_apps_ontology;Workout">
+        <rdfs:subClassOf rdf:resource="&Mobile_apps_ontology;FitnessMonitor"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Accelerometer -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Accelerometer">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;DeviceAccess"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#ActiveNetworkLLC -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;ActiveNetworkLLC">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Android -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Android">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Platform"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#AngryBirds -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;AngryBirds">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;SinglePlayer"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">1</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">AngryBirds</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">RavioEntertainment</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#AntekSzadaj -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;AntekSzadaj">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Camera -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Camera">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;DeviceAccess"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#CouchTo5K -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;CouchTo5K">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;FitnessCoach"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">24</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">AActive Network, LLC</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">CouchTo5K
+</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;Accelerometer"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;ActiveNetworkLLC"/>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;GPS"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#FacebookInc -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;FacebookInc">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Fancy -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Fancy">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Lifestyle"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">22</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">Fancy</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Thing Daemon, Inc</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;GPS"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;ThingDaemonInc"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Foodpanda -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Foodpanda">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;FoodAndDrink"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">25</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">Foodpanda</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Foodpanda, Inc</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;FoodpandaInc"/>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;GPS"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Web"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#FoodpandaInc -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;FoodpandaInc">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Foursquare -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Foursquare">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Lifestyle"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">16</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">Foursquare</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Foursquare, Inc</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;Accelerometer"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;FoursquareLabsInc"/>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;GPS"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#FoursquareLabsInc -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;FoursquareLabsInc">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#GPS -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;GPS">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;DeviceAccess"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#GoodTask -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;GoodTask">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;StayOnTask"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">23</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">GoodTask
+</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">haha, interactive</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;HahaInteractive"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#GoogleInc -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;GoogleInc">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#GoogleMaps -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;GoogleMaps">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Navigation"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">18</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Google</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">GoogleMaps</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;GPS"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;GoogleInc"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Web"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#HahaInteractive -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;HahaInteractive">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Hybrid -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Hybrid">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Type"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#IMDBInc -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;IMDBInc">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#IMDBapp -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;IMDBapp">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Lifestyle"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">13</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">IMDB</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">IMDBapp</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;IMDBInc"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Web"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#LoloLLC -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;LoloLLC">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#MathematicalFormulas -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;MathematicalFormulas">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Education"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">15</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Antek Szadaj</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">MathematicalFormulas</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;AntekSzadaj"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Messenger -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Messenger">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;SocialNetworking"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">12</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Facebook, Inc</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">Messenger</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;FacebookInc"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Microphone -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Microphone">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;DeviceAccess"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Native -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Native">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Type"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#NikeInc -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;NikeInc">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#NikeRunning -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;NikeRunning">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Running"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">9</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Nike, Inc</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">NikeRunning</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;Accelerometer"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;GPS"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;NikeInc"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#PayPalApp -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;PayPalApp">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Finance"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">11</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">PayPal</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">PayPalApp</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;Paypal"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Web"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Paypal -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Paypal">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#PerformanceStretching -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;PerformanceStretching">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Cardio"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">8</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">PerformanceStretching</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">lolo, LLC</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;Accelerometer"/>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;GPS"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;LoloLLC"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Pomelo -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Pomelo">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;PhotoAndVideo"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">10</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">Pomelo</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Xiamen Meitu Technology</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;XiamenMeituTechnology"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#RovioEntertainmentLtd -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;RovioEntertainmentLtd">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Runastic -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Runastic">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Cycling"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">7</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">Runastic</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Runtastic</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;Accelerometer"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;GPS"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;Runtastic"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Runtastic -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Runtastic">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Scribd -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Scribd">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Books"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">6</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Scribd</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">Scribd</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;ScribdReadUnlimitedBooks"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Web"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#ScribdReadUnlimitedBooks -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;ScribdReadUnlimitedBooks">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Shazam -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Shazam">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Music"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">5</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">Shazam</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">ShazamEntertainmentLimited</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;Microphone"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;ShazamEntertainmentLimited"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#ShazamEntertainmentLimited -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;ShazamEntertainmentLimited">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Soundcloud -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Soundcloud">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Music"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">20</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">SoundCloud</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Soundcloud, Inc</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;SoundcloudInc"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Web"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#SoundcloudInc -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;SoundcloudInc">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#SwiftKey -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;SwiftKey">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#SwiftkeyKeyboard -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;SwiftkeyKeyboard">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Utilities"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">4</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Swiftkey</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">SwiftkeyKeyboard</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;SwiftKey"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#ThingDaemonInc -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;ThingDaemonInc">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Wargaming_PublicCompanyLimited -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Wargaming_PublicCompanyLimited">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Web -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Web">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Type"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#WindowsPhone -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;WindowsPhone">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Platform"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#WorldOfTanks -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;WorldOfTanks">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;MultiPlayer"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">2</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">WARGAMING Public Company Limited</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">WorldOfTanks
+</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;Accelerometer"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Hybrid"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;Wargaming_PublicCompanyLimited"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Web"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#XiamenMeituTechnology -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;XiamenMeituTechnology">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Yahoo -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Yahoo">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#YahooWeather -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;YahooWeather">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Weather"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">3</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Yahoo!</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">YahooWeather</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;GPS"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;Yahoo"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#iOS -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;iOS">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Platform"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
