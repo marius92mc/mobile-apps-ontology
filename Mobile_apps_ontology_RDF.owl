@@ -6,12 +6,14 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY Mobile_apps_ontology "http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#" >
+    <!ENTITY Mobile_apps_ontology2 "http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#9" >
 ]>
 
 
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.w3.org/2002/07/owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Mobile_apps_ontology2="&Mobile_apps_ontology;9"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:Mobile_apps_ontology="http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#">
@@ -502,6 +504,31 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#9gag -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;9gag">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Entertainment"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">50</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">9gag</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">9gag, Inc</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;9gagInc"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Web"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#9gagInc -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;9gagInc">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Accelerometer -->
 
     <NamedIndividual rdf:about="&Mobile_apps_ontology;Accelerometer">
@@ -570,6 +597,31 @@
         <Mobile_apps_ontology:requires rdf:resource="&Mobile_apps_ontology;GPS"/>
         <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
         <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#ESPN -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;ESPN">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Sports"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">51</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">ESPN</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">ESPN, Inc</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;ESPNInc"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Web"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#ESPNInc -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;ESPNInc">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
     </NamedIndividual>
     
 

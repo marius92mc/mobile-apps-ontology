@@ -172,6 +172,12 @@
         <DataProperty IRI="#version"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#9gag"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#9gagInc"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Accelerometer"/>
     </Declaration>
     <Declaration>
@@ -191,6 +197,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CouchTo5K"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ESPN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ESPNInc"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#FacebookInc"/>
@@ -480,6 +492,14 @@
         <Class IRI="#FitnessMonitor"/>
     </SubClassOf>
     <ClassAssertion>
+        <Class IRI="#Entertainment"/>
+        <NamedIndividual IRI="#9gag"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producer"/>
+        <NamedIndividual IRI="#9gagInc"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#DeviceAccess"/>
         <NamedIndividual IRI="#Accelerometer"/>
     </ClassAssertion>
@@ -506,6 +526,14 @@
     <ClassAssertion>
         <Class IRI="#FitnessCoach"/>
         <NamedIndividual IRI="#CouchTo5K"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sports"/>
+        <NamedIndividual IRI="#ESPN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producer"/>
+        <NamedIndividual IRI="#ESPNInc"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Producer"/>
@@ -689,6 +717,36 @@
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#9gag"/>
+        <NamedIndividual IRI="#WindowsPhone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#9gag"/>
+        <NamedIndividual IRI="#Android"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#9gag"/>
+        <NamedIndividual IRI="#iOS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <NamedIndividual IRI="#9gag"/>
+        <NamedIndividual IRI="#9gagInc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#9gag"/>
+        <NamedIndividual IRI="#Web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#9gag"/>
+        <NamedIndividual IRI="#Native"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#AngryBirds"/>
         <NamedIndividual IRI="#iOS"/>
     </ObjectPropertyAssertion>
@@ -731,6 +789,36 @@
         <ObjectProperty IRI="#requires"/>
         <NamedIndividual IRI="#CouchTo5K"/>
         <NamedIndividual IRI="#Accelerometer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#ESPN"/>
+        <NamedIndividual IRI="#iOS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#ESPN"/>
+        <NamedIndividual IRI="#WindowsPhone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#ESPN"/>
+        <NamedIndividual IRI="#Android"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <NamedIndividual IRI="#ESPN"/>
+        <NamedIndividual IRI="#ESPNInc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#ESPN"/>
+        <NamedIndividual IRI="#Web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#ESPN"/>
+        <NamedIndividual IRI="#Native"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
@@ -785,12 +873,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#Foursquare"/>
-        <NamedIndividual IRI="#iOS"/>
+        <NamedIndividual IRI="#Android"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#Foursquare"/>
-        <NamedIndividual IRI="#Android"/>
+        <NamedIndividual IRI="#iOS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
@@ -855,12 +943,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isTypeOf"/>
         <NamedIndividual IRI="#GoogleMaps"/>
-        <NamedIndividual IRI="#Web"/>
+        <NamedIndividual IRI="#Native"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isTypeOf"/>
         <NamedIndividual IRI="#GoogleMaps"/>
-        <NamedIndividual IRI="#Native"/>
+        <NamedIndividual IRI="#Web"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#requires"/>
@@ -870,12 +958,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#IMDBapp"/>
-        <NamedIndividual IRI="#iOS"/>
+        <NamedIndividual IRI="#Android"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#IMDBapp"/>
-        <NamedIndividual IRI="#Android"/>
+        <NamedIndividual IRI="#iOS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isProducedBy"/>
@@ -910,17 +998,17 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#Messenger"/>
+        <NamedIndividual IRI="#Android"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#Messenger"/>
         <NamedIndividual IRI="#iOS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#Messenger"/>
         <NamedIndividual IRI="#WindowsPhone"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#developedFor"/>
-        <NamedIndividual IRI="#Messenger"/>
-        <NamedIndividual IRI="#Android"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isProducedBy"/>
@@ -970,12 +1058,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#PayPalApp"/>
-        <NamedIndividual IRI="#WindowsPhone"/>
+        <NamedIndividual IRI="#Android"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#PayPalApp"/>
-        <NamedIndividual IRI="#Android"/>
+        <NamedIndividual IRI="#WindowsPhone"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isProducedBy"/>
@@ -1010,12 +1098,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#requires"/>
         <NamedIndividual IRI="#PerformanceStretching"/>
-        <NamedIndividual IRI="#Accelerometer"/>
+        <NamedIndividual IRI="#GPS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#requires"/>
         <NamedIndividual IRI="#PerformanceStretching"/>
-        <NamedIndividual IRI="#GPS"/>
+        <NamedIndividual IRI="#Accelerometer"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
@@ -1040,12 +1128,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#Runastic"/>
-        <NamedIndividual IRI="#Android"/>
+        <NamedIndividual IRI="#iOS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#Runastic"/>
-        <NamedIndividual IRI="#iOS"/>
+        <NamedIndividual IRI="#Android"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isProducedBy"/>
@@ -1085,12 +1173,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isTypeOf"/>
         <NamedIndividual IRI="#Scribd"/>
-        <NamedIndividual IRI="#Native"/>
+        <NamedIndividual IRI="#Web"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isTypeOf"/>
         <NamedIndividual IRI="#Scribd"/>
-        <NamedIndividual IRI="#Web"/>
+        <NamedIndividual IRI="#Native"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
@@ -1229,6 +1317,21 @@
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#appID"/>
+        <NamedIndividual IRI="#9gag"/>
+        <Literal datatypeIRI="&xsd;integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#9gag"/>
+        <Literal datatypeIRI="&xsd;string">9gag</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#producer_name"/>
+        <NamedIndividual IRI="#9gag"/>
+        <Literal datatypeIRI="&xsd;string">9gag, Inc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#appID"/>
         <NamedIndividual IRI="#AngryBirds"/>
         <Literal datatypeIRI="&xsd;integer">1</Literal>
     </DataPropertyAssertion>
@@ -1257,6 +1360,21 @@
         <DataProperty IRI="#producer_name"/>
         <NamedIndividual IRI="#CouchTo5K"/>
         <Literal datatypeIRI="&xsd;string">AActive Network, LLC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#appID"/>
+        <NamedIndividual IRI="#ESPN"/>
+        <Literal datatypeIRI="&xsd;integer">51</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#ESPN"/>
+        <Literal datatypeIRI="&xsd;string">ESPN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#producer_name"/>
+        <NamedIndividual IRI="#ESPN"/>
+        <Literal datatypeIRI="&xsd;string">ESPN, Inc</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#appID"/>
