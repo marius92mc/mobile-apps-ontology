@@ -253,9 +253,6 @@
         <NamedIndividual IRI="#MathematicalFormulas"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Messenger"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Microphone"/>
     </Declaration>
     <Declaration>
@@ -316,10 +313,19 @@
         <NamedIndividual IRI="#ThingDaemonInc"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Twitter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TwitterInc"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Wargaming_PublicCompanyLimited"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Web"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Whatsapp"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#WindowsPhone"/>
@@ -600,10 +606,6 @@
         <NamedIndividual IRI="#MathematicalFormulas"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#SocialNetworking"/>
-        <NamedIndividual IRI="#Messenger"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#DeviceAccess"/>
         <NamedIndividual IRI="#Microphone"/>
     </ClassAssertion>
@@ -684,12 +686,24 @@
         <NamedIndividual IRI="#ThingDaemonInc"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SocialNetworking"/>
+        <NamedIndividual IRI="#Twitter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producer"/>
+        <NamedIndividual IRI="#TwitterInc"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Producer"/>
         <NamedIndividual IRI="#Wargaming_PublicCompanyLimited"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Type"/>
         <NamedIndividual IRI="#Web"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Messaging"/>
+        <NamedIndividual IRI="#Whatsapp"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Platform"/>
@@ -743,6 +757,31 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isTypeOf"/>
         <NamedIndividual IRI="#9gag"/>
+        <NamedIndividual IRI="#Native"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#Android"/>
+        <NamedIndividual IRI="#iOS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#Android"/>
+        <NamedIndividual IRI="#Android"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#Android"/>
+        <NamedIndividual IRI="#WindowsPhone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <NamedIndividual IRI="#Android"/>
+        <NamedIndividual IRI="#FacebookInc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#Android"/>
         <NamedIndividual IRI="#Native"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -997,31 +1036,6 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
-        <NamedIndividual IRI="#Messenger"/>
-        <NamedIndividual IRI="#Android"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#developedFor"/>
-        <NamedIndividual IRI="#Messenger"/>
-        <NamedIndividual IRI="#iOS"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#developedFor"/>
-        <NamedIndividual IRI="#Messenger"/>
-        <NamedIndividual IRI="#WindowsPhone"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isProducedBy"/>
-        <NamedIndividual IRI="#Messenger"/>
-        <NamedIndividual IRI="#FacebookInc"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isTypeOf"/>
-        <NamedIndividual IRI="#Messenger"/>
-        <NamedIndividual IRI="#Native"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#NikeRunning"/>
         <NamedIndividual IRI="#Android"/>
     </ObjectPropertyAssertion>
@@ -1252,6 +1266,51 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#Twitter"/>
+        <NamedIndividual IRI="#WindowsPhone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#Twitter"/>
+        <NamedIndividual IRI="#Android"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#Twitter"/>
+        <NamedIndividual IRI="#iOS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <NamedIndividual IRI="#Twitter"/>
+        <NamedIndividual IRI="#TwitterInc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#Twitter"/>
+        <NamedIndividual IRI="#Web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <NamedIndividual IRI="#Twitter"/>
+        <NamedIndividual IRI="#Native"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#Whatsapp"/>
+        <NamedIndividual IRI="#Android"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#Whatsapp"/>
+        <NamedIndividual IRI="#WindowsPhone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
+        <NamedIndividual IRI="#Whatsapp"/>
+        <NamedIndividual IRI="#iOS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#developedFor"/>
         <NamedIndividual IRI="#WorldOfTanks"/>
         <NamedIndividual IRI="#iOS"/>
     </ObjectPropertyAssertion>
@@ -1329,6 +1388,21 @@
         <DataProperty IRI="#producer_name"/>
         <NamedIndividual IRI="#9gag"/>
         <Literal datatypeIRI="&xsd;string">9gag, Inc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#appID"/>
+        <NamedIndividual IRI="#Android"/>
+        <Literal datatypeIRI="&xsd;integer">53</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Android"/>
+        <Literal datatypeIRI="&xsd;string">Whatsapp</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#producer_name"/>
+        <NamedIndividual IRI="#Android"/>
+        <Literal datatypeIRI="&xsd;string">Facebook, Inc</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#appID"/>
@@ -1484,21 +1558,6 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#appID"/>
-        <NamedIndividual IRI="#Messenger"/>
-        <Literal datatypeIRI="&xsd;integer">12</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#Messenger"/>
-        <Literal datatypeIRI="&xsd;string">Messenger</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#producer_name"/>
-        <NamedIndividual IRI="#Messenger"/>
-        <Literal datatypeIRI="&xsd;string">Facebook, Inc</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#appID"/>
         <NamedIndividual IRI="#NikeRunning"/>
         <Literal datatypeIRI="&xsd;integer">9</Literal>
     </DataPropertyAssertion>
@@ -1631,6 +1690,21 @@
         <DataProperty IRI="#producer_name"/>
         <NamedIndividual IRI="#SwiftkeyKeyboard"/>
         <Literal datatypeIRI="&xsd;string">Swiftkey</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#appID"/>
+        <NamedIndividual IRI="#Twitter"/>
+        <Literal datatypeIRI="&xsd;integer">54</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Twitter"/>
+        <Literal datatypeIRI="&xsd;string">Twitter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#producer_name"/>
+        <NamedIndividual IRI="#Twitter"/>
+        <Literal datatypeIRI="&xsd;string">Twitter, Inc</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#appID"/>

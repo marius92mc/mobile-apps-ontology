@@ -549,6 +549,14 @@
 
     <NamedIndividual rdf:about="&Mobile_apps_ontology;Android">
         <rdf:type rdf:resource="&Mobile_apps_ontology;Platform"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">53</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Facebook, Inc</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">Whatsapp</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;FacebookInc"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
     </NamedIndividual>
     
 
@@ -811,22 +819,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Messenger -->
-
-    <NamedIndividual rdf:about="&Mobile_apps_ontology;Messenger">
-        <rdf:type rdf:resource="&Mobile_apps_ontology;SocialNetworking"/>
-        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">12</Mobile_apps_ontology:appID>
-        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Facebook, Inc</Mobile_apps_ontology:producer_name>
-        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">Messenger</Mobile_apps_ontology:name>
-        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
-        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;FacebookInc"/>
-        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
-        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
-        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
-    </NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Microphone -->
 
     <NamedIndividual rdf:about="&Mobile_apps_ontology;Microphone">
@@ -1060,6 +1052,31 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Twitter -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Twitter">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;SocialNetworking"/>
+        <Mobile_apps_ontology:appID rdf:datatype="&xsd;integer">54</Mobile_apps_ontology:appID>
+        <Mobile_apps_ontology:name rdf:datatype="&xsd;string">Twitter</Mobile_apps_ontology:name>
+        <Mobile_apps_ontology:producer_name rdf:datatype="&xsd;string">Twitter, Inc</Mobile_apps_ontology:producer_name>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Native"/>
+        <Mobile_apps_ontology:isProducedBy rdf:resource="&Mobile_apps_ontology;TwitterInc"/>
+        <Mobile_apps_ontology:isTypeOf rdf:resource="&Mobile_apps_ontology;Web"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#TwitterInc -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;TwitterInc">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Producer"/>
+    </NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Wargaming_PublicCompanyLimited -->
 
     <NamedIndividual rdf:about="&Mobile_apps_ontology;Wargaming_PublicCompanyLimited">
@@ -1072,6 +1089,17 @@
 
     <NamedIndividual rdf:about="&Mobile_apps_ontology;Web">
         <rdf:type rdf:resource="&Mobile_apps_ontology;Type"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Whatsapp -->
+
+    <NamedIndividual rdf:about="&Mobile_apps_ontology;Whatsapp">
+        <rdf:type rdf:resource="&Mobile_apps_ontology;Messaging"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;Android"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;WindowsPhone"/>
+        <Mobile_apps_ontology:developedFor rdf:resource="&Mobile_apps_ontology;iOS"/>
     </NamedIndividual>
     
 
