@@ -497,6 +497,18 @@
         <Class IRI="#Workout"/>
         <Class IRI="#FitnessMonitor"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#DeviceAccess"/>
+        <Class IRI="#Type"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Platform"/>
+        <Class IRI="#Type"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Producer"/>
+        <Class IRI="#Type"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Entertainment"/>
         <NamedIndividual IRI="#9gag"/>
@@ -1737,6 +1749,34 @@
         <NamedIndividual IRI="#YahooWeather"/>
         <Literal datatypeIRI="&xsd;string">Yahoo!</Literal>
     </DataPropertyAssertion>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isProducedBy"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#requires"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#developedFor"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProducedBy"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTypeOf"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#developedFor"/>
         <ObjectMinCardinality cardinality="1">

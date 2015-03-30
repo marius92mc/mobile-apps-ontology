@@ -46,6 +46,7 @@
     <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#developedFor -->
 
     <ObjectProperty rdf:about="&Mobile_apps_ontology;developedFor">
+        <rdfs:domain rdf:resource="&Mobile_apps_ontology;Category"/>
         <rdfs:range>
             <Restriction>
                 <onProperty rdf:resource="&Mobile_apps_ontology;developedFor"/>
@@ -60,6 +61,8 @@
     <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#isProducedBy -->
 
     <ObjectProperty rdf:about="&Mobile_apps_ontology;isProducedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="&Mobile_apps_ontology;Category"/>
         <rdfs:range>
             <Restriction>
                 <onProperty rdf:resource="&Mobile_apps_ontology;isProducedBy"/>
@@ -74,6 +77,9 @@
     <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#isTypeOf -->
 
     <ObjectProperty rdf:about="&Mobile_apps_ontology;isTypeOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&Mobile_apps_ontology;Category"/>
         <rdfs:range>
             <Restriction>
                 <onProperty rdf:resource="&Mobile_apps_ontology;isTypeOf"/>
@@ -88,6 +94,8 @@
     <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#requires -->
 
     <ObjectProperty rdf:about="&Mobile_apps_ontology;requires">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="&Mobile_apps_ontology;Category"/>
         <rdfs:range>
             <Restriction>
                 <onProperty rdf:resource="&Mobile_apps_ontology;requires"/>
@@ -229,7 +237,9 @@
 
     <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#DeviceAccess -->
 
-    <Class rdf:about="&Mobile_apps_ontology;DeviceAccess"/>
+    <Class rdf:about="&Mobile_apps_ontology;DeviceAccess">
+        <disjointWith rdf:resource="&Mobile_apps_ontology;Type"/>
+    </Class>
     
 
 
@@ -379,7 +389,9 @@
 
     <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#Platform -->
 
-    <Class rdf:about="&Mobile_apps_ontology;Platform"/>
+    <Class rdf:about="&Mobile_apps_ontology;Platform">
+        <disjointWith rdf:resource="&Mobile_apps_ontology;Type"/>
+    </Class>
     
 
 
@@ -387,6 +399,7 @@
 
     <Class rdf:about="&Mobile_apps_ontology;Producer">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <disjointWith rdf:resource="&Mobile_apps_ontology;Type"/>
     </Class>
     
 
