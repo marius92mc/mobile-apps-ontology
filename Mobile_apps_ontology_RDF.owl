@@ -77,7 +77,6 @@
     <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#isTypeOf -->
 
     <ObjectProperty rdf:about="&Mobile_apps_ontology;isTypeOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="&Mobile_apps_ontology;Category"/>
         <rdfs:range>

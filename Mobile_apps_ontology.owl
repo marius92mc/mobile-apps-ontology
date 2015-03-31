@@ -1755,9 +1755,6 @@
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#requires"/>
     </InverseFunctionalObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#isTypeOf"/>
-    </SymmetricObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#isTypeOf"/>
     </TransitiveObjectProperty>
