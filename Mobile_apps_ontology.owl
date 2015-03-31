@@ -154,6 +154,9 @@
         <ObjectProperty IRI="#isProducedBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isSubtypeOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isTypeOf"/>
     </Declaration>
     <Declaration>
@@ -1749,6 +1752,10 @@
         <NamedIndividual IRI="#YahooWeather"/>
         <Literal datatypeIRI="&xsd;string">Yahoo!</Literal>
     </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSubtypeOf"/>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </SubObjectPropertyOf>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#isProducedBy"/>
     </InverseFunctionalObjectProperty>
@@ -1765,6 +1772,13 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isProducedBy"/>
         <Class IRI="#Category"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubtypeOf"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isTypeOf"/>
+            <Class IRI="#Fitness"/>
+        </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isTypeOf"/>
@@ -1787,6 +1801,20 @@
             <ObjectProperty IRI="#isProducedBy"/>
             <Class IRI="#Producer"/>
         </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubtypeOf"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubtypeOf"/>
+            <Class IRI="#FitnessCoach"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubtypeOf"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isSubtypeOf"/>
+            <Class IRI="#FitnessMonitor"/>
+        </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isTypeOf"/>

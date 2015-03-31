@@ -74,6 +74,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#isSubtypeOf -->
+
+    <ObjectProperty rdf:about="&Mobile_apps_ontology;isSubtypeOf">
+        <rdfs:subPropertyOf rdf:resource="&Mobile_apps_ontology;isTypeOf"/>
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&Mobile_apps_ontology;isSubtypeOf"/>
+                <someValuesFrom rdf:resource="&Mobile_apps_ontology;FitnessMonitor"/>
+            </Restriction>
+        </rdfs:range>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&Mobile_apps_ontology;isTypeOf"/>
+                <someValuesFrom rdf:resource="&Mobile_apps_ontology;Fitness"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <Restriction>
+                <onProperty rdf:resource="&Mobile_apps_ontology;isSubtypeOf"/>
+                <someValuesFrom rdf:resource="&Mobile_apps_ontology;FitnessCoach"/>
+            </Restriction>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2015/2/Mobile_apps_ontology.owl#isTypeOf -->
 
     <ObjectProperty rdf:about="&Mobile_apps_ontology;isTypeOf">
